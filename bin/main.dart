@@ -1,3 +1,11 @@
 import 'package:exercism/exercism.dart' as exercism;
 
-void main(List<String> arguments) {}
+import '../lib/exercism.dart';
+
+void main(List<String> arguments) {
+  final String phoneNumber = '';
+
+  NanpParser nanpParser = NanpParser(phoneNumber);
+
+  print('test');
+}
