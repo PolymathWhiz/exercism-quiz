@@ -13,4 +13,8 @@ class NanpParser {
         .replaceAll(RegExp(r'[^\s\w]'), '')
         .replaceAll(RegExp(r'\s+\b|\b\s'), '');
   }
+
+  bool get isValid {
+    return regex.hasMatch(normalizeNumber) ? true : false;
+  }
 }
