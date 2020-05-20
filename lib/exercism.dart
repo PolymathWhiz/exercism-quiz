@@ -27,5 +27,15 @@ class NanpParser {
     return isValid ? normalizeNumber : parseNumber(number);
   }
 
-  String parseNumber(String val) {}
+  String parseNumber(String val) {
+    if (val.isEmpty) {
+      return 'Number cannot be empty';
+    } else if (val.length == 11 && val.substring(1) == '1') {
+      return val.substring(1);
+    } else if (val.substring(0, 2) == FIRST_SEQ) {
+      return normalizeNumber.substring(1);
+    } else {
+      return normalizeNumber.substring(1);
+    }
+  }
 }

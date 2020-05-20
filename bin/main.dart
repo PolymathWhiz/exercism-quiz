@@ -3,9 +3,9 @@ import 'package:exercism/exercism.dart' as exercism;
 import '../lib/exercism.dart';
 
 void main(List<String> arguments) {
-  final String phoneNumber = '';
+  final phoneNumber = '613-995-0253';
 
-  NanpParser nanpParser = NanpParser(phoneNumber);
+  var nanpParser = NanpParser(phoneNumber);
 
-  print('test');
+  print(nanpParser.showNumber);
 }
