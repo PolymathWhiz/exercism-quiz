@@ -17,4 +17,15 @@ class NanpParser {
   bool get isValid {
     return regex.hasMatch(normalizeNumber) ? true : false;
   }
+
+  /*
+ * This method checks the current state of the number and tries to work on it.
+ * If the number is null, it returns a string error message
+ * @return <String> Correct Number 
+ */
+  String get showNumber {
+    return isValid ? normalizeNumber : parseNumber(number);
+  }
+
+  String parseNumber(String val) {}
 }
